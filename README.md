@@ -1,10 +1,7 @@
 # Numerical Integral Equations for Time Series Analysis
-## Context
-**Goal:** the repository contains python routines for time seires analysis
-* Ensemble Methods:
+## Motivation
+Time series analysis is used in many fields, including finance, economics, engineering, social sciences, and natural sciences. It can be used to forecast future values of the data, estimate the impact of various factors on the data, and identify anomalies or outliers in the data.
 
-  > **Data**  : *X*&#8712;&#8477;<sup>n&#x00D7;d</sup>   ,   **Target** : *y*&#8712;&#8477;<sup>n</sup><br><br>
-  > **Model** : T[`0`], T[`1`], ..., T[`n_estimators`]   <br><br>
-  >  **Prediction** : *y* &#8773; T[`0`]\(*X*\) + &#951;&#8729;T[`1`]\(*X*\) + &#951;&#8729;T[`2`]\(*X*\) + ...
+The common statistical techniques which are employed for performing the analysis, are, among others, moving average, autoregressive models, exponential smoothing, and ARIMA models. These methods rely assumptions of some form of ergodicity or stationarity combined with Gaussian random noise. Hence, are limited to these assumptions.
 
-* Gradient boosting: each booster, T[`k`], corrects the approximation of its predecessors
+The goal of this repository is to provied theory and methods for handling non-stationary and non-Gaussian noise time series from integral equations point of view. 
