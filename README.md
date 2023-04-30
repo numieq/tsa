@@ -19,4 +19,30 @@ Let us cosider a multivariate time series,
 
 $$\\left\\{{\bf X}_t\\right\\}=\\left\\{...,{\bf X}_{t-1},{\bf X}_{t},{\bf X}_{t+1},...\\right\\}$$
 
-where ${\bf X}_t$ is an $m$-dimensionalrandom vector for each $t\in T$ with well defined first and second order statistics.
+where ${\bf X}_t$ is an $m$-dimensional random vector for each $t\in T$ with well defined first and second order statistics, and $T$ is a discrete set of values representing succesive sampling points in time.
+
+Let us assuming that,
+
+$$ {\bf X}_t = {\bf s}(t) + {\bf n}(t) $$
+
+where ${\bf s}(t)$ is the useful random signal and ${\bf n}(t)$ is an additive noise,
+whose mean values are zeros,
+
+$$ \overline{{\bf s}(t)} = {\bf 0} = \overline{{\bf n}(t)}$$
+
+and assume we have the covariace functions,
+
+ $$ R(t,\tau)=\overline{{\bf X}_t^*\cdot{\bf X}_{\tau}}\\,,\\; f(t,\tau)=\overline{{\bf X}_t^*\cdot{\bf s}_{\tau}} $$
+
+where the star stands for complex conjugate. Then, the linear estimate for the signal,
+
+$$ {\bf s}(t) = \int_Dh(t,\tau){\bf X}_{\tau}{\rm d}\tau $$
+
+where $D$ is the observed domain of the signal, minimizes the variance of the error if
+
+$$ \int_DR(t,\tau)h(s,\tau){\rm d}\tau = f(t,s) \\,,\\quad t,s\in\overline{D}=D\cup\Gamma $$
+
+where $\Gamma$ denotes the boundary of the doamin, $D$, and assuming the uniqueness of the solution of the integral equation.
+
+
+
