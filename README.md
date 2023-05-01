@@ -28,7 +28,7 @@ $$ {\bf X}_t = {\bf s}(t) + {\bf n}(t) $$
 where ${\bf s}(t)$ is the useful random signal and ${\bf n}(t)$ is an additive noise,
 whose mean values are zeros,
 
-$$ \overline{{\bf s}(t)} = {\bf 0} = \overline{{\bf n}(t)}$$
+$$ \\overline{{\bf s}(t)} = {\bf 0} = \\overline{{\bf n}(t)}$$
 
 and assume we have the covariace functions,
 
