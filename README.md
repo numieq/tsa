@@ -32,7 +32,8 @@ $$ \left<{\bf s}(t)\right> = {\bf 0} = \left<{\bf n}(t)\right> $$
 
 and assume we have the covariace functions,
 
- $$ R(t,\tau)=\left<{\bf X}_t^*\cdot{\bf X}_{\tau}\right>\\,,\\; f(t,\tau)=\let<{\bf X}_t^*\cdot{\bf s}_{\tau}\right> $$
+ $$ R(t,\tau)=\left<{\bf X}_t^*\cdot{\bf X}_{\tau}\right> $$
+ $$ f(t,\tau)=\let<{\bf X}_t^*\cdot{\bf s}_{\tau}\right> $$
 
 where the star stands for complex conjugate. Then, the linear estimate for the signal,
 
