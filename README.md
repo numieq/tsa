@@ -36,17 +36,18 @@ and assume we have the covariace functions,
  
 and
 
- $$ f(t,\tau)=\left<{\bf X}_t^*\cdot{\bf s}_{\tau}\right> $$
+ $$ f(t,\tau)=\left<{\bf X}_t^*\cdot{\bf s}(\tau)\right> $$
 
-where the star stands for complex conjugate. Then, the linear estimate for the signal,
+where the star stands for complex conjugate. Accordingly, any linear estimate for the signal,
 
 $$ {\bf s}(t) = \int_Dh(t,\tau){\bf X}_{\tau}{\rm d}\tau $$
 
-where $D$ is the observed domain of the signal, minimizes the variance of the error if
+where $D$ is the observed domain of the signal, which minimizes, satisfies the integral equation
 
 $$ \int_DR(t,\tau)h(s,\tau){\rm d}\tau = f(t,s) \\,,\\quad t,s\in\overline{D}=D\cup\Gamma $$
 
-where $\Gamma$ denotes the boundary of the doamin, $D$, and assuming the uniqueness of the solution of the integral equation.
+where $\Gamma$ denotes the boundary of the doamin, $D$. Thus, unique solvability of the integral equation, ensures the existence and uniqueness of the minimizer.
+
 
 
 
