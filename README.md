@@ -40,11 +40,11 @@ and
 
 where the star stands for complex conjugate.
 
-Let $D$ denote the observed domain of the signal, Then, any linear estimate for the signal,
+Let $D$ denote the observed domain of the signal. It can be shown, that any linear estimate for the signal,
 
 $$ {\bf s}(t) = \int_Dh(t,\tau){\bf X}_{\tau}{\rm d}\tau $$
 
-minimizing the variance, satisfies the integral equation
+minimizing the variance, also satisfies the integral equation
 
 $$ \int_DR(t,\tau)h(s,\tau){\rm d}\tau = f(t,s) \\,,\\quad t,s\in\overline{D}=D\cup\Gamma $$
 
