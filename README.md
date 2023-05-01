@@ -2,9 +2,9 @@
 ## Motivation
 Time series analysis is used in many fields, including finance, economics, engineering, social sciences, and natural sciences. It can be used to forecast future values of the data, estimate the impact of various factors on the data, and identify anomalies or outliers in the data.
 
-The common statistical techniques which are employed for performing the analysis, are, among others, moving averages, autoregressive models and their extensions (e.g., ARIMA, SARIMA), exponential smoothing, and noise filtering . These methods rely on the assumption of some form of ergodicity or stationarity combined with either Gaussian noise or Markovian randomness. Hence, are limited to these constraints. 
+The common statistical techniques which are employed for performing the analysis, are, among others, moving averages, autoregressive models (e.g., ARMA, ARIMA, SARIMA), exponential smoothing, and noise filtering . These methods rely on the assumption of some form of ergodicity or stationarity combined with either Gaussian noise or Markovian randomness. Hence, are limited to these constraints.
 
-The goal of this project is to provied theory and methods from integral equations point of view for handling non-stationary time series, which are driven by non-Gaussian, possibly heavy tailed, noise. 
+The goal of this project is to provied theory and methods from integral equations point of view for handling non-stationary time series, which are driven by non-Gaussian, possibly heavy tailed, noise.
 
 ## Topics
 Not all topics of time series analysis are treated here. The focus of this work is on the following topics:
@@ -33,21 +33,19 @@ $$ \left<{\bf s}(t)\right> = {\bf 0} = \left<{\bf n}(t)\right> $$
 and assume we have the covariace functions,
 
  $$ R(t,\tau)=\left<{\bf X}_t^*\cdot{\bf X}_{\tau}\right> $$
- 
+
 and
 
  $$ f(t,\tau)=\left<{\bf X}_t^*\cdot{\bf s}(\tau)\right> $$
 
-where the star stands for complex conjugate. Accordingly, any linear estimate for the signal,
+where the star stands for complex conjugate.
+
+Let $D$ denote the observed domain of the signal, Then, any linear estimate for the signal,
 
 $$ {\bf s}(t) = \int_Dh(t,\tau){\bf X}_{\tau}{\rm d}\tau $$
 
-where $D$ is the observed domain of the signal, which minimizes, satisfies the integral equation
+minimizing the variance, satisfies the integral equation
 
 $$ \int_DR(t,\tau)h(s,\tau){\rm d}\tau = f(t,s) \\,,\\quad t,s\in\overline{D}=D\cup\Gamma $$
 
 where $\Gamma$ denotes the boundary of the doamin, $D$. Thus, unique solvability of the integral equation, ensures the existence and uniqueness of the minimizer.
-
-
-
-
