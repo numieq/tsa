@@ -28,11 +28,11 @@ $$ {\bf X}_t = {\bf s}(t) + {\bf n}(t) $$
 where ${\bf s}(t)$ is the useful random signal and ${\bf n}(t)$ is an additive noise,
 whose mean values are zeros,
 
-$$ \left<{\bf s}(t)\right> = {\bf 0} = <{\bf n}(t)>$$
+$$ \left<{\bf s}(t)\right> = {\bf 0} = \left<{\bf n}(t)\right> $$
 
 and assume we have the covariace functions,
 
- $$ R(t,\tau)=\overline{{\bf X}_t^*\cdot{\bf X}_{\tau}}\\,,\\; f(t,\tau)=\overline{{\bf X}_t^*\cdot{\bf s}_{\tau}} $$
+ $$ R(t,\tau)=\left<{\bf X}_t^*\cdot{\bf X}_{\tau}\right>\\,,\\; f(t,\tau)=\let<{\bf X}_t^*\cdot{\bf s}_{\tau}\right> $$
 
 where the star stands for complex conjugate. Then, the linear estimate for the signal,
 
