@@ -21,7 +21,7 @@ $$\\left\\{{\bf X}_t\\right\\}=\\left\\{...,{\bf X}_{t-1},{\bf X}_{t},{\bf X}_{t
 
 where ${\bf X}_t$ is an $m$-dimensional random vector for each $t\in T$ with well defined first and second order statistics, and $T$ is a discrete set of values representing succesive sampling points in time.
 
-Let us assuming that,
+Let us assume that,
 
 $$ {\bf X}_t = {\bf s}(t) + {\bf n}(t) $$
 
