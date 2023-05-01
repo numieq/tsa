@@ -36,7 +36,7 @@ and assume we have the covariace functions,
  
 and
 
- $$ f(t,\tau)=\let<{\bf X}_t^*\cdot{\bf s}_{\tau}\right> $$
+ $$ f(t,\tau)=\left<{\bf X}_t^*\cdot{\bf s}_{\tau}\right> $$
 
 where the star stands for complex conjugate. Then, the linear estimate for the signal,
 
