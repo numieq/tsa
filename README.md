@@ -30,7 +30,7 @@ whose mean values are zeros,
 
 $$ \left<{\bf s}(t)\right> = {\bf 0} = \left<{\bf n}(t)\right> $$
 
-and assume we have the covariace functions,
+and assume the availability of the covariace functions,
 
  $$ R(t,\tau)=\left<{\bf X}_t^*\cdot{\bf X}_{\tau}\right> $$
 
