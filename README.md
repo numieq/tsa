@@ -22,7 +22,7 @@ Our derivation of estimation methods is done in the framework of covariance theo
 
 Let us cosider a multivariate time series,
 
-$$\left\{{\bf X}_t\right\}=\left\{...,{\bf X}_{t-1},{\bf X}_{t},{\bf X}_{t+1},...\right\}$$
+$$ \left\{ {\bf X}_t \right\} = \left\{ ...,{\bf X}_{t-1},{\bf X}_{t},{\bf X}_{t+1},... \right\} $$
 
 where ${\bf X}_t$ is an $m$-dimensional random vector for each $t\in T$ with well defined first and second order statistics, and $T$ is a discrete set of values representing succesive sampling points in time.
 
