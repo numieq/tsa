@@ -22,7 +22,7 @@ Our derivation of estimation methods is done in the framework of covariance theo
 
 Let us cosider a multivariate time series,
 
-$$ \left\{ {\bf X}_t \right\} = \left\{ ...,{\bf X}_{t-1},{\bf X}_{t},{\bf X}_{t+1},... \right\} $$
+$$  ...,{\bf X}_{t_{-1}},{\bf X}_{t_0},{\bf X}_{t_1},...  $$
 
 where ${\bf X}_t$ is an $m$-dimensional random vector for each $t\in T$ with well defined first and second order statistics, and $T$ is a discrete set of values representing succesive sampling points in time.
 
@@ -30,7 +30,7 @@ Let us assume that,
 
 $$ {\bf X}_t = {\bf s}(t) + {\bf n}(t) $$
 
-where ${\bf s}(t)$ is the useful random signal and ${\bf n}(t)$ is an additive noise,
+where ${\bf s}(t)$ is a useful signal and ${\bf n}(t)$ is an additive noise,
 whose mean values are zeros,
 
 $$ \left<{\bf s}(t)\right> = {\bf 0} = \left<{\bf n}(t)\right> $$
