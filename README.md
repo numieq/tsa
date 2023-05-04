@@ -10,11 +10,11 @@ The goal of this project is to provied theory and methods from integral equation
 
 ## Why Integral Equations?
 
-Nonlinear filtering of time series is a well studied problem. The particle filter technique is considered the most general method for tackling the problem due to its inherent ability for capturing more complex nonlinear relationships between variables and handle non-Gaussian noise.
+Nonlinear filtering of time series is a well studied problem. The particle filter technique is considered the most general method for tackling the problem due to its inherent ability for capturing complex nonlinear relationships between variables and handling non-Gaussian noise.
 
 However, particle filters can be computationally expensive and become unstable, particularly for high-dimensional or complex systems, which can limit their practical use. Simpler techniques, e.g. Extended Kalman Filter or Unscented Kalman Filter, are, typically, attempted in this case with limited success.
 
-Integral equations based techniques are less general than the particle filter method. However, these techniques alleviate some of the difficulties associated with the particle filter: they can handle nonlinear time series and non-Gaussian noise with controled stability and moderate computational resources. Thus, integral equations techniques bridge the gap between the two celebrated mehods, the particle and Kalman filtering techniques, for nonlinear time series prediction and filtering.
+Integral equations based techniques are less general than the particle filter method. However, these techniques alleviate some of the difficulties associated with the particle filter: they can handle nonlinear time series and non-Gaussian noise with controled stability and moderate computational resources. In this sense, integral equations techniques bridge the gap between the two celebrated mehods, the particle and Kalman filtering techniques, for nonlinear time series prediction and filtering.
 
 ## Background
 
