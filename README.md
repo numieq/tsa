@@ -8,15 +8,10 @@ The common statistical techniques which are employed for performing the analysis
 
 The goal of this project is to provied theory and methods from integral equations point of view for handling non-stationary time series, which are driven by non-Gaussian, possibly heavy tailed, noise.
 
-## Topics
+## Why Integral Equations?
 
-Not all topics of time series analysis are treated here. The focus of this work is on the following topics:
+Non linear filtering ...
 
-* Elements of Covariance theory.
-* Generalized Linear estimation.
-* Non-linear estimation techniques.
-
-Our derivation of estimation methods is done in the framework of covariance theory, with minimal a-priori assumptions. The underlying distribution laws are, however, depicted by the properties of the chosen approximation for the covariance matrix.
 
 ## Background
 
@@ -54,3 +49,13 @@ minimizing the variance, also satisfies the integral equation
 $$ \int_DR(t,\tau)h(s,\tau){\rm d}\tau = f(t,s) \,,\quad t,s\in\overline{D}=D\cup\Gamma $$
 
 where $\Gamma$ denotes the boundary of the doamin, $D$. Thus, unique solvability of the integral equation, ensures the existence and uniqueness of the minimizer.
+
+## Topics
+
+Not all topics of time series analysis are treated here. The focus of this work is on the following topics:
+
+* Elements of Covariance theory.
+* Generalized Linear estimation.
+* Non-linear estimation techniques.
+
+Our derivation of estimation methods is done in the framework of covariance theory, with minimal a-priori assumptions. The underlying distribution laws are, however, depicted by the properties of the chosen approximation for the covariance matrix.
