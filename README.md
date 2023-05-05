@@ -6,17 +6,17 @@ Time series analysis is used in many fields, including finance, economics, engin
 
 The common statistical techniques which are employed for performing the analysis, are, among others, moving averages, autoregressive models (e.g., ARMA, ARIMA, SARIMA), exponential smoothing, and noise filtering . These methods rely on the assumption of some form of ergodicity or stationarity combined with either Gaussian noise or Markovian randomness. Hence, are limited to these constraints.
 
-The goal of this project is to provide practical merhods and tools, which are based on numerical integral equations techniques, for handling non-stationary time series, that are driven by non-Gaussian, possibly, heavy tailed noise.
+The goal of this project is to provide practical merhods and tools, which are based on numerical integral equations techniques, for prediction and forecasting of non-stationary time series, that are driven by non-Gaussian, possibly, heavy tailed noise.
 
 ## Why Integral Equations?
 
-The problem addresed here can be scrutinized in the well studied framework of nonlinear filtering. The particle filter technique is considered the most general method for tackling the problem due to its inherent ability for capturing complex nonlinear relationships between variables and handling non-Gaussian noise.
+The most general paradign addressing the prediction and forecasting problem is the nonlinear filtering framework. In this framework the particle filter technique is considered the most general method for tackling the problem due to its inherent ability for capturing complex nonlinear relationships between variables and handling non-Gaussian noise.
 
 However, particle filters can be computationally expensive and become unstable, particularly for high-dimensional or complex systems, which can limit their practical use. Simpler techniques, e.g. Extended Kalman Filter or Unscented Kalman Filter, are, typically, attempted in this case with limited success.
 
 Integral equations based techniques are, on the other hand, less general than the particle filter method. However, these techniques alleviate some of the difficulties associated with the particle filter: they can handle nonlinear time series and non-Gaussian noise with controled stability and moderate computational resources.
 
-In this sense, integral equations techniques bridge the gap between the two celebrated mehods, the particle and Kalman filtering techniques, for nonlinear time series prediction and filtering.
+In this sense, integral equations techniques bridge the gap between the two celebrated mehods, the particle and Kalman filtering techniques, for nonlinear time series prediction and forecasting.
 
 ## Background
 
@@ -54,6 +54,8 @@ minimizing the variance, also satisfies the integral equation
 $$ \int_DR(t,\tau)h(s,\tau){\rm d}\tau = f(t,s) \,,\quad t,s\in\overline{D}=D\cup\Gamma $$
 
 where $\Gamma$ denotes the boundary of the doamin, $D$. Thus, unique solvability of the integral equation, ensures the existence and uniqueness of the minimizer.
+
+For handling nonlinear time series, we can replace ${\bf s}(t)$ $\rightarrow$ $A{\bf s}(t)$, where $A$ is a suitable nonlinear operator.
 
 ## Topics
 
