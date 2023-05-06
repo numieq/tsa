@@ -22,32 +22,32 @@ In this sense, integral equations techniques bridge the gap between the two cele
 
 Let us cosider a multivariate time series,
 
-$$  ...,{\bf X}_{t_{-1}},{\bf X}_{t_0},{\bf X}_{t_1},...  $$
+$$  ...,{\bf X}[t_{-1}],{\bf X}[t_0],{\bf X}[t_1],...  $$
 
-where ${\bf X}_t$ is an $m$-dimensional random vector for each $t\in T$ with well defined first and second order statistics, and $T$ is a discrete set of values representing succesive sampling points in time.
+where ${\bf X}[t]$ is an $m$-dimensional random vector for each $t\in T$ with well defined first and second order statistics, and $T$ is a discrete set of values representing succesive sampling points in time.
 
 Let us assume that,
 
-$$ {\bf X}_t = {\bf s}(t) + {\bf n}(t) $$
+$$ {\bf X}[t] = {\bf s}(t) + {\bf N}[t] $$
 
-where ${\bf s}(t)$ is a useful signal and ${\bf n}(t)$ is an additive noise,
+where ${\bf s}(t)$ is a useful signal and ${\bf N}[t]$ is an additive noise,
 whose mean values are zeros,
 
-$$ \left<{\bf s}(t)\right> = {\bf 0} = \left<{\bf n}(t)\right> $$
+$$ \left<{\bf s}(t)\right> = {\bf 0} = \left<{\bf N}[t] \right> $$
 
 and assume the availability of the covariace functions,
 
- $$ R(t,\tau)=\left<{\bf X}_t^*\cdot{\bf X}_{\tau}\right> $$
+ $$ R(t,\tau)=\left<{\bf X}[t]^*\cdot{\bf X}[\tau]\right> $$
 
 and
 
- $$ f(t,\tau)=\left<{\bf X}_t^*\cdot{\bf s}(\tau)\right> $$
+ $$ f(t,\tau)=\left<{\bf X}[t]^*\cdot{\bf s}(\tau)\right> $$
 
 where the star stands for complex conjugate.
 
 Let $D$ denote the observed domain of the signal. It can be shown, that any linear estimate for the signal,
 
-$$ {\bf s}(t) = \int_Dh(t,\tau){\bf X}_{\tau}{\rm d}\tau $$
+$$ {\bf s}(t) = \int_Dh(t,\tau){\bf X}_[\tau]{\rm d}\tau $$
 
 minimizing the variance, also satisfies the integral equation
 
