@@ -1,22 +1,26 @@
-# Numerical Integral Equations for Time Series Analysis
+# Numerical Integral Equations for Random Fields Estimations and Simulations
 
 ## Motivation
 
-Time series analysis is used in many fields, including finance, economics, engineering, social sciences, and natural sciences. It can be used to forecast future values of the data, estimate the impact of various factors on the data, and identify anomalies or outliers in the data.
+Random fields refer to stochastic models that describe the variation of a random quantity over a multidimensional space. In fact, a random field is a generalization of a stochastic process where the underlying parameter need no longer be real or integer valued "time" but can instead take values that are multidimensional vectors or points on some manifold.
 
-The common statistical techniques which are employed for performing the analysis, are, among others, moving averages, autoregressive models (e.g., ARMA, ARIMA, SARIMA), exponential smoothing, and noise filtering . These methods rely on the assumption of some form of ergodicity or stationarity combined with either Gaussian noise or Markovian randomness. Hence, are limited to these constraints.
+Random fields applies in various fields, including finance, image processing, environmental modeling, and geostatistics, aning others. It can be used to perform data assimilation, model uncertainties, estimate the impact of various factors on the data, and identify anomalies or outliers in the data.
 
-The goal of this project is to provide practical merhods and tools, which are based on numerical integral equations techniques, for prediction and forecasting of non-stationary time series, that are driven by non-Gaussian, possibly, heavy tailed noise.
+Random field estimation involves specifying a suitable model and estimating its parameters based on observed data. It is an essential step in analyzing and understanding spatial or spatiotemporal data and allows for making predictions and inferences about the underlying random field.
+
+The common statistical techniques for performing estimations over random fields rely on the assumption of some form of ergodicity or stationarity combined with either Gaussian noise or Markovian randomness. Hence, are limited to these constraints.
+
+The goal of this project is to provide practical methods and tools, which are based on numerical integral equations techniques, for analysis and estimation of non-stationary random fields, that are driven by non-Gaussian, possibly, heavy tailed noise.
 
 ## Why Integral Equations?
 
-The most general paradign addressing the prediction and forecasting problem is the nonlinear filtering framework. In this framework the particle filter technique is considered the most general method for tackling the problem due to its inherent ability for capturing complex nonlinear relationships between variables and handling non-Gaussian noise.
+The commonly used techniques for random field estimation are maximum likelihood, method of moments, Bayesian estimation and Monte Carlo, among others. These methods are either oversimplifeid or require substantial computational effort both in preprocessing the data and solving a, typically, complex optimization problem.
 
-However, particle filters can be computationally expensive and become unstable, particularly for high-dimensional or complex systems, which can limit their practical use. Simpler techniques, e.g. Extended Kalman Filter or Unscented Kalman Filter, are, typically, attempted in this case with limited success.
+[//]: <The most general paradigm addressing the prediction and forecasting problem is the nonlinear filtering framework. In this framework the particle filter technique is considered the most general method for tackling the problem due to its inherent ability for capturing complex nonlinear relationships between variables and handling non-Gaussian noise.>
 
-Integral equations based techniques are, on the other hand, less general than the particle filter method. However, these techniques alleviate some of the difficulties associated with the particle filter: they can handle nonlinear time series and non-Gaussian noise with controled stability and moderate computational resources.
+Integral equations based techniques are, on the other hand, less general than the computationally demanding methods detailed above. However, these techniques can handle nonlinear complexities and non-Gaussian noise with controled stability and moderate computational resources.
 
-In this sense, integral equations techniques bridge the gap between the two celebrated mehods, the particle and Kalman filtering techniques, for nonlinear time series prediction and forecasting.
+In this sense, integral equations techniques bridge the gap between the over simplified and over complicated methods for nonlinear and non Gaussian random fields esimations and simulations.
 
 ## Background
 
