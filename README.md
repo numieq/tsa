@@ -24,49 +24,49 @@ In this sense, integral equations techniques bridge the gap between the over sim
 
 ## Background
 
-Let us cosider a multivariate time series,
+Let us cosider a multivariate random field,
 
-$$  ...,{\bf X}[t_{-1}],{\bf X}[t_0],{\bf X}[t_1],...  $$
+$$  {\bf U}[x]\in\bm{R}^m\,,\;\;\;x\in\mathcal{B}  $$
 
-where ${\bf X}[t]$ is an $m$-dimensional random vector for each $t\in T$ with well defined first and second order statistics, and $T$ is a discrete set of values representing succesive sampling points in time.
+where ${\bf U}[x]$ is an $m$-dimensional random vector for each $x\in\mathcal{B}$ with well defined first and second order statistics, and $\mathcal{B}$ is a subset of $\bm{R}^n$ representing the underlined spatial domain.
 
 Let us assume that,
 
-$$ {\bf X}[t] = {\bf s}(t) + {\bf N}[t] $$
+$$ {\bf U}[x] = {\bf S}(x) + {\bf N}[x] $$
 
-where ${\bf s}(t)$ is a useful signal and ${\bf N}[t]$ is an additive noise,
-whose mean values are zeros,
+where ${\bf S}(t)$ is a useful signal and ${\bf N}[t]$ is an additive noise, whose mean values are zeros,
 
-$$ \left<{\bf s}(t)\right> = {\bf 0} = \left<{\bf N}[t] \right> $$
+$$ \left<{\bf S}(x)\right> = {\bf 0} = \left<{\bf N}[x] \right> $$
 
 and assume the availability of the covariace functions,
 
- $$ R(t,\tau)=\left<{\bf X}[t]^*\cdot{\bf X}[\tau]\right> $$
+ $$ R(x,\xi)=\left<{\bf U}[x]^*\cdot{\bf U}[\xi]\right> $$
 
 and
 
- $$ f(t,\tau)=\left<{\bf X}[t]^*\cdot{\bf s}(\tau)\right> $$
+ $$ f(x,\xi)=\left<{\bf U}[x]^*\cdot{\bf S}(\xi)\right> $$
 
 where the star stands for complex conjugate.
 
 Let $D$ denote the observed domain of the signal. It can be shown, that any linear estimate for the signal,
 
-$$ {\bf s}(t) = \int_Dh(t,\tau){\bf X}_[\tau]{\rm d}\tau $$
+$$ {\bf S}(x) = \int_Dh(x,\xi){\bf U}[\xi]{\rm d}\xi $$
 
 minimizing the variance, also satisfies the integral equation
 
-$$ \int_DR(t,\tau)h(s,\tau){\rm d}\tau = f(t,s) \,,\quad t,s\in\overline{D}=D\cup\Gamma $$
+$$ \int_DR(x,\xi)h(y,\xi){\rm d}\xi = f(x,y) \,,\quad x,y\in\overline{D}=D\cup\Gamma $$
 
 where $\Gamma$ denotes the boundary of the doamin, $D$. Thus, unique solvability of the integral equation, ensures the existence and uniqueness of the minimizer.
 
-For handling nonlinear time series, we can replace ${\bf s}(t)$ $\rightarrow$ $A{\bf s}(t)$, where $A$ is a suitable nonlinear operator.
-
+For handling nonlinear time series, we can replace ${\bf S}(x)$ $\rightarrow$ $A{\bf S}(x)$, where $A$ is a suitable nonlinear operator.
+x
 ## Topics
 
 Not all topics of time series analysis are treated here. The focus of this work is on the following elements:
 
-* Principles of Covariance theory.
-* Generalized Linear estimation.
-* Nonlinear estimation techniques.
+* Random Fields represention
+* Principles of Covariance theory
+* Generalized Linear estimation
+* Nonlinear estimation techniques
 
-Our derivation of estimation methods is done in the framework of covariance theory, with minimal a-priori assumptions. The underlying distribution laws are, however, rendered by the properties of the chosen model and construction for the covariance functions, $R(t,\tau)$ and $f(t,s)$.
+Our derivation of estimation methods is done in the framework of covariance theory, with minimal a-priori assumptions. The underlying distribution laws are, however, rendered by the properties of the chosen model and construction for the covariance functions, $R(x,\xi)$ and $f(x,y)$.
