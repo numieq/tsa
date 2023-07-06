@@ -26,9 +26,9 @@ In this sense, integral equations techniques bridge the gap between the over sim
 
 Let us cosider a multivariate random field,
 
-$$  {\bf U}[x]\in\bm{R}^m\,,\;\;\;x\in\mathcal{B}  $$
+$$  {\bf U}[x]\in\mathbb{R}^m,\quad x\in\mathcal{B}  $$
 
-where ${\bf U}[x]$ is an $m$-dimensional random vector for each $x\in\mathcal{B}$ with well defined first and second order statistics, and $\mathcal{B}$ is a subset of $\bm{R}^n$ representing the underlined spatial domain.
+where ${\bf U}[x]$ is an $m$-dimensional random vector for each $x\in\mathcal{B}$ with well defined first and second order statistics, and $\mathcal{B}$ is a subset of $\mathbb{R}^n$ representing the underlined spatial domain.
 
 Let us assume that,
 
@@ -54,15 +54,15 @@ $$ {\bf S}(x) = \int_Dh(x,\xi){\bf U}[\xi]{\rm d}\xi $$
 
 minimizing the variance, also satisfies the integral equation
 
-$$ \int_DR(x,\xi)h(y,\xi){\rm d}\xi = f(x,y) \,,\quad x,y\in\overline{D}=D\cup\Gamma $$
+$$ \int_DR(x,\xi)h(y,\xi){\rm d}\xi = f(x,y),\quad x,y\in\overline{D}=D\cup\Gamma $$
 
 where $\Gamma$ denotes the boundary of the doamin, $D$. Thus, unique solvability of the integral equation, ensures the existence and uniqueness of the minimizer.
 
 For handling nonlinear time series, we can replace ${\bf S}(x)$ $\rightarrow$ $A{\bf S}(x)$, where $A$ is a suitable nonlinear operator.
-x
+
 ## Topics
 
-Not all topics of time series analysis are treated here. The focus of this work is on the following elements:
+Not all topics of random fields analysis are treated here. The focus of this work is on the following elements:
 
 * Random Fields represention
 * Principles of Covariance theory
