@@ -4,7 +4,7 @@
 
 Random fields refer to stochastic models that describe the variation of a random quantity over a multidimensional space. In fact, a random field is a generalization of a stochastic process where the underlying parameter need no longer be real or integer valued "time" but can instead take values that are multidimensional vectors or points on some manifold.
 
-Random fields applies in various fields, including finance, image processing, environmental modeling, and geostatistics, aning others. It can be used to perform data assimilation, model uncertainties, estimate the impact of various factors on the data, and identify anomalies or outliers in the data.
+Random fields applies in various fields, including finance, image processing, environmental modeling, and geostatistics, among others. It can be used to perform data assimilation, model uncertainties, estimate the impact of various factors on the data, and identify anomalies or outliers in the data.
 
 Random field estimation involves specifying a suitable model and estimating its parameters based on observed data. It is an essential step in analyzing and understanding spatial or spatiotemporal data and allows for making predictions and inferences about the underlying random field.
 
